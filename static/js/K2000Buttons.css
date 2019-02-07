@@ -1,0 +1,164 @@
+
+.base{
+  display:grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.centerGrid{
+  display:inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btnGrid{
+  display:inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.btnGrid > :first-child {
+  margin-right: .3em;
+}
+
+.btnText{
+  margin-left: auto;
+  margin-right: auto;
+  display:inline-block;
+}
+
+.btnText>p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align:center;
+}
+
+.btnText>button{
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.col1{
+  grid-column: 1;
+}
+
+.col2{
+  grid-column: 2;
+}
+
+.col3{
+  grid-column: 3;
+}
+
+.col4{
+  grid-column: 4;
+}
+
+.row1{
+  grid-row: 1;
+}
+
+.row2{
+  grid-row: 2;
+}
+
+.row3{
+  grid-row: 3;
+}
+
+.row4{
+  grid-row: 4;
+}
+
+.btnWidth{
+  width: 5.5em;
+}
+.btn{
+  composes: btnWidth;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: .375rem .75rem;
+  margin: 0;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  box-sizing: border-box;
+  transition: color .15s ease-in-out,
+              background-color .15s ease-in-out,
+              border-color .15s ease-in-out,
+              box-shadow .15s ease-in-out;
+}
+
+.roundBtn{
+  composes: btnWidth;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: .375rem .75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btnLeft{
+  box-shadow: -2px 0px 3px inset black;
+  border-radius: .75rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;  
+}
+
+.btnRight{
+  border-radius: .75rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 2px 0px 3px inset black;  
+}
+
+
+.roundBtn > input{
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+  box-sizing: content-box;
+  /*! display: inline-flex; */
+}
+
+.roundBtnGroup>p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align:center;
+  box-sizing: border-box;
+}
+
+.roundBtnGroup *{
+  font-size: 1.2vw;
+}
+
+.btnGroup{
+  margin-left: auto;
+  margin-right: auto;
+}
